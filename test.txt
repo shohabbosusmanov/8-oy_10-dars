@@ -1,0 +1,49 @@
+1. React - UI yaratish uchun component-based JavaScript kutubxonasi. Virtual DOM - DOM'ning virtual nusxasi bo'lib, o'zgarishlar aniqlangach real DOM ga minimal yangilanish yuboriladi.
+
+2. JSX - HTML va JavaScript aralash sintaksisi bo'lib, React komponentlar yozishda qulaylik yaratadi. JSX transpiler (masalan Babel) yordamida React.createElement() funksiyalariga o'giriladi.
+
+3. Funksional va Klass komponentlar mavjud. Funksional komponentlar soddaroq va Hook'lar bilan ishlaydi, class komponentlar esa lifecycle method'larni qo'llaydi.
+
+4. Props - tashqaridan componentga uzatiladi, State esa component ichida boshqariladi. Props immutable, State esa mutable (setState yoki useState orqali o'zgaradi).
+
+5. <React.Fragment> yoki qisqa sintaksis <></> - extra DOM elementlar qo'shmasdan bir nechta JSX elementni o'rash uchun. Layout buzilmasligi uchun ishlatiladi (div'lar ortiqcha bo'lmasligi uchun).
+
+6. useState soddaroq holatlar uchun, useReducer esa murakkab holatlar va ko'p bosqichli state o'zgarishlari uchun. useReducer Redux'ga o'xshash ishlaydi: action va reducer bilan.
+
+7. Bo'sh array ([]) - faqat bir marta ishlaydi (componentDidMount). Array ichida qiymat bersak, faqat o'sha qiymat o'zgarganda effect ishlaydi.
+
+8. Custom Hook - qayta foydalaniladigan hook funksiyasi (use bilan boshlanadi). React hooklaridan foydalanib yaratiladi.
+
+9. useMemo - hisoblash natijasini saqlaydi, useCallback esa funksiyani memoize qiladi. Performance optimization uchun ishlatiladi - har renderda qayta hisoblanmasligi uchun.
+
+10. useContext - context'dan to'g'ridan-to'g'ri qiymat olish imkonini beradi. Context API orqali global state yoki theme, user data ulashiladi. React.createContext(), Provider, va useContext() orqali ishlaydi.
+
+11. Reconciliation - Virtual DOM va real DOM o'rtasidagi farqni topish jarayoni. React key yordamida komponentlarni solishtiradi va minimal o'zgarish kiritadi.
+
+12. Performance'ni oshirish uchun memoization texnikasi. React.memo() - komponent faqat props o'zgarganda render bo'lishini ta'minlaydi.
+
+13. PureComponent - shouldComponentUpdate() ni avtomatik bajaradi (props/state shallow compare). Faqat class komponentlar uchun mavjud. Regular Component esa har state/props o'zgarishda re-render qiladi.
+
+14. Controlled - form elementlari React state bilan boshqariladi. Uncontrolled - DOM o'zgarishlarini ref orqali boshqaradi.
+
+15. Unikal key elementni noto'g'ri re-render qilinishining oldini oladi.
+
+16. HOC - bu funksiya, u komponentni qabul qilib, yangi component qaytaradi.
+
+17. Component props orqali render funksiyani uzatadi. Dynamic rendering yoki reusable UI logic uchun ishlatiladi.
+
+18. Kodni kichik bo'laklarga bo'lib, kerak bo'lganida yuklash usuli. React.lazy() va Suspense orqali dynamic import qilinadi.
+
+19. React.lazy() orqali component dynamic yuklanadi. Suspense loading fallback ko'rsatadi.
+
+20. Error Boundary - runtime xatolarni ushlab, UI buzilmasligini ta'minlaydi. Faqat class component orqali yaratiladi.
+
+21. Context - kichik project va limited state sharing uchun. Redux - katta application va complex state flows uchun.
+
+22. React.memo(), useMemo(), useCallback() orqali unnecessary re-render'larni oldini olish. Virtual DOM va shouldComponentUpdate ishlatish. Code splitting, lazy loading va list'larda optimal key ishlatish.
+
+23. Chrome/Firefox uchun extension sifatida o'rnatiladi.
+
+24. SSR - HTML serverda tayyorlanadi, CSR - brauzerda.
+
+25. Concurrent rendering - UI responsiveness'ni oshiradi. Suspense loading states'ni boshqaradi, startTransition() esa past-priority update'lar.
